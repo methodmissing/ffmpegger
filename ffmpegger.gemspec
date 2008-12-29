@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.date = %q{2008-12-19}
   s.description = %q{High quality video editing DSL}
   s.email = ["arilerner@mac.com"]
-  s.files = ["test/test_ffmpegger.rb", "test/test_helper.rb", "test/test_live.rb"]
+  s.files = ["lib/ffmpegger.rb", "lib/ffmpegger/configurable.rb", "lib/ffmpegger/dsl.rb", "lib/ffmpegger/object.rb", "lib/ffmpegger/processor.rb", "lib/ffmpegger/version.rb"]
   s.has_rdoc = true
   s.homepage = %q{http://ffmpegger.rubyforge.org}
   s.post_install_message = %q{
