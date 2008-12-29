@@ -2,11 +2,12 @@ module Ffmpegger
   module Processor
     
     def convert
+      log_buffer = ''
       vputs "Running #{first_command}"
-      out = %x[#{first_command}]
-      %x[#{clean_command}]
+      log_buffer << %x[#{first_command}]
+      log_buffer << %x[#{clean_command}]
       vputs "Running #{second_command}"
-      out = %x[#{second_command}]
+      log_buffer << %x[#{second_command}]
     end
     
     def all_options
